@@ -155,17 +155,18 @@
             // 
             // btnsave
             // 
+            btnsave.BackColor = Color.Teal;
             btnsave.Cursor = Cursors.Hand;
             btnsave.FlatAppearance.BorderSize = 3;
             btnsave.FlatStyle = FlatStyle.Flat;
             btnsave.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnsave.ForeColor = Color.MidnightBlue;
+            btnsave.ForeColor = Color.White;
             btnsave.Location = new Point(73, 370);
             btnsave.Name = "btnsave";
             btnsave.Size = new Size(257, 44);
             btnsave.TabIndex = 0;
             btnsave.Text = "SAVE";
-            btnsave.UseVisualStyleBackColor = true;
+            btnsave.UseVisualStyleBackColor = false;
             btnsave.Click += btnsave_Click;
             // 
             // Screen_Register

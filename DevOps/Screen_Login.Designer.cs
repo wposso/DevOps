@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            lblgetstarted = new Label();
+            lblregister = new Label();
             lblloginhere = new Label();
             label5 = new Label();
             pnlload = new Panel();
@@ -42,7 +44,6 @@
             btnlogin = new Button();
             lblaccount = new Label();
             label4 = new Label();
-            label3 = new Label();
             label6 = new Label();
             label7 = new Label();
             panel2 = new Panel();
@@ -59,25 +60,48 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(lblgetstarted);
+            panel1.Controls.Add(lblregister);
             panel1.Controls.Add(lblloginhere);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(pnlload);
             panel1.Controls.Add(lblaccount);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
             panel1.Location = new Point(717, 82);
             panel1.Name = "panel1";
             panel1.Size = new Size(505, 618);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
+            // lblgetstarted
+            // 
+            lblgetstarted.AutoSize = true;
+            lblgetstarted.Font = new Font("Segoe UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblgetstarted.Location = new Point(112, 24);
+            lblgetstarted.Name = "lblgetstarted";
+            lblgetstarted.Size = new Size(276, 62);
+            lblgetstarted.TabIndex = 13;
+            lblgetstarted.Text = "Get Started";
+            // 
+            // lblregister
+            // 
+            lblregister.AutoSize = true;
+            lblregister.FlatStyle = FlatStyle.Flat;
+            lblregister.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblregister.Location = new Point(157, 24);
+            lblregister.Name = "lblregister";
+            lblregister.Size = new Size(195, 60);
+            lblregister.TabIndex = 12;
+            lblregister.Text = "Register";
+            lblregister.Visible = false;
+            // 
             // lblloginhere
             // 
             lblloginhere.AutoSize = true;
             lblloginhere.Cursor = Cursors.Hand;
             lblloginhere.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblloginhere.ForeColor = Color.MidnightBlue;
-            lblloginhere.Location = new Point(285, 574);
+            lblloginhere.ForeColor = Color.Teal;
+            lblloginhere.Location = new Point(280, 574);
             lblloginhere.Name = "lblloginhere";
             lblloginhere.Size = new Size(82, 20);
             lblloginhere.TabIndex = 11;
@@ -191,17 +215,18 @@
             // 
             // btnlogin
             // 
+            btnlogin.BackColor = Color.Teal;
             btnlogin.Cursor = Cursors.Hand;
             btnlogin.FlatAppearance.BorderSize = 3;
             btnlogin.FlatStyle = FlatStyle.Flat;
             btnlogin.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnlogin.ForeColor = Color.MidnightBlue;
+            btnlogin.ForeColor = Color.White;
             btnlogin.Location = new Point(73, 370);
             btnlogin.Name = "btnlogin";
             btnlogin.Size = new Size(257, 44);
             btnlogin.TabIndex = 0;
             btnlogin.Text = "LOGIN";
-            btnlogin.UseVisualStyleBackColor = true;
+            btnlogin.UseVisualStyleBackColor = false;
             btnlogin.Click += btnlogin_Click;
             // 
             // lblaccount
@@ -209,7 +234,7 @@
             lblaccount.AutoSize = true;
             lblaccount.Cursor = Cursors.Hand;
             lblaccount.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblaccount.ForeColor = Color.MidnightBlue;
+            lblaccount.ForeColor = Color.Teal;
             lblaccount.Location = new Point(280, 570);
             lblaccount.Name = "lblaccount";
             lblaccount.Size = new Size(72, 20);
@@ -225,16 +250,6 @@
             label4.Size = new Size(104, 20);
             label4.TabIndex = 7;
             label4.Text = "Don't have an ";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(127, 51);
-            label3.Name = "label3";
-            label3.Size = new Size(261, 60);
-            label3.TabIndex = 6;
-            label3.Text = "Get Started";
             // 
             // label6
             // 
@@ -331,7 +346,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.MidnightBlue;
+            BackColor = Color.Teal;
             ClientSize = new Size(1307, 770);
             Controls.Add(btnminimized);
             Controls.Add(button3);
@@ -363,7 +378,6 @@
         private TextBox txtpasswordL;
         private Button btnlogin;
         private Label label4;
-        private Label label3;
         private Label txtpassword;
         private Label label1;
         private Label lblaccount;
@@ -380,5 +394,7 @@
         private Label label5;
         private Label lblerrorcredentials2;
         private Label lblerrorcredentials1;
+        private Label lblregister;
+        private Label lblgetstarted;
     }
 }

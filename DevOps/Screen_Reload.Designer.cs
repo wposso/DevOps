@@ -108,17 +108,18 @@
             // 
             // btnloginreload
             // 
+            btnloginreload.BackColor = Color.Teal;
             btnloginreload.Cursor = Cursors.Hand;
             btnloginreload.FlatAppearance.BorderSize = 3;
             btnloginreload.FlatStyle = FlatStyle.Flat;
             btnloginreload.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnloginreload.ForeColor = Color.MidnightBlue;
+            btnloginreload.ForeColor = Color.White;
             btnloginreload.Location = new Point(73, 370);
             btnloginreload.Name = "btnloginreload";
             btnloginreload.Size = new Size(257, 44);
             btnloginreload.TabIndex = 0;
             btnloginreload.Text = "LOGIN";
-            btnloginreload.UseVisualStyleBackColor = true;
+            btnloginreload.UseVisualStyleBackColor = false;
             btnloginreload.Click += btnloginreload_Click;
             // 
             // Screen_Reload

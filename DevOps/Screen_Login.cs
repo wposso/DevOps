@@ -19,6 +19,7 @@ namespace DevOps
         //References
         Screen_Register screen_register = new Screen_Register();
         Screen_Reload Screen_Reload = new Screen_Reload();
+        Screen_Dashboard Screen_Dashboard = new Screen_Dashboard();
 
         private void btnexit_Click(object sender, EventArgs e)
         {
@@ -61,6 +62,17 @@ namespace DevOps
 
             if (lblaccount.Visible && label4.Visible == true)
             {
+                if(lblgetstarted.Visible == true) 
+                {
+                    lblgetstarted.Visible = false;
+                    lblregister.Visible = true;
+                }
+                else 
+                {
+                    lblgetstarted.Visible = true;
+                    lblregister.Visible = false;
+                }
+
                 lblaccount.Visible = false;
                 label4.Visible = false;
                 lblloginhere.Visible = true;
@@ -68,6 +80,7 @@ namespace DevOps
             }
             else
             {
+                
                 lblaccount.Visible = true;
                 label4.Visible = true;
                 lblloginhere.Visible = false;
@@ -83,6 +96,17 @@ namespace DevOps
 
             if (lblloginhere.Visible && label5.Visible == true)
             {
+                if(lblregister.Visible == true) 
+                {
+                    lblregister.Visible = false;
+                    lblgetstarted.Visible = true;
+                }
+                else 
+                {
+                    lblregister.Visible = true;
+                    lblgetstarted.Visible = false;
+                }
+
                 lblloginhere.Visible = false;
                 label5.Visible = false;
                 lblaccount.Visible = true;
@@ -90,6 +114,7 @@ namespace DevOps
             }
             else
             {
+                
                 lblloginhere.Visible = true;
                 label5.Visible = true;
                 lblaccount.Visible = false;
@@ -141,7 +166,9 @@ namespace DevOps
                 SqlDataReader reader = script.ExecuteReader();
                 if (reader.HasRows)
                 {
-                    MessageBox.Show("Welcome to yor system");
+                    this.Hide();
+
+                    Screen_Dashboard.Show();
                     txtemail.Clear();
                     txtpasswordL.Clear();
 
