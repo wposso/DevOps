@@ -76,3 +76,5 @@ C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.ge
 C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\ref\DevOps.dll
 C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.sourcelink.json
 C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.Screen_Dashboard.resources
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.Properties.Resources.resources
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.Screen_Books_Load.resources

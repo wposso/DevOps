@@ -7,7 +7,7 @@ namespace DevOps
     public partial class Screen_Login : Form
     {
         //Database connection
-        SqlConnection connecion = new SqlConnection("server=192.168.1.184; database=MYDataBase; integrated security=true");
+        SqlConnection connection = new SqlConnection("server=192.168.1.184; database=MYDataBase; integrated security=true");
 
         public Screen_Login()
         {
@@ -160,9 +160,9 @@ namespace DevOps
         {
             try
             {
-                connecion.Open();
+                connection.Open();
 
-                SqlCommand script = new SqlCommand("select email,password from Register where email='" + txtemail.Text + "' and password='" + txtpasswordL.Text + "'", connecion);
+                SqlCommand script = new SqlCommand("select email,password from Register where email='" + txtemail.Text + "' and password='" + txtpasswordL.Text + "'", connection);
                 SqlDataReader reader = script.ExecuteReader();
                 if (reader.HasRows)
                 {
@@ -181,7 +181,7 @@ namespace DevOps
                     txtemail.Clear();
                     txtpasswordL.Clear();
                 }
-                connecion.Close();
+                connection.Close();
             }
             catch (Exception ex)
             {

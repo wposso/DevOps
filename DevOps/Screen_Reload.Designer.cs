@@ -108,7 +108,7 @@
             // 
             // btnloginreload
             // 
-            btnloginreload.BackColor = Color.Teal;
+            btnloginreload.BackColor = Color.Black;
             btnloginreload.Cursor = Cursors.Hand;
             btnloginreload.FlatAppearance.BorderSize = 3;
             btnloginreload.FlatStyle = FlatStyle.Flat;

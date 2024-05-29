@@ -19,11 +19,36 @@ namespace DevOps
 
         //References
         private Screen_Login screen_login;
+        Screen_Books_Load screen_books_load = new Screen_Books_Load();
 
         private void btnback_Click(object sender, EventArgs e)
         {
             this.Hide();
+
+            screen_login = new Screen_Login();
             screen_login.Show();
+        }
+
+        //Control Books_Load .visible
+        private void OpenBooksLoad(object screen_books_load)
+        {
+            if (pnlDload.Controls.Count > 0)
+                pnlDload.Controls.RemoveAt(0);
+            Form A = screen_books_load as Form;
+            A.TopLevel = false;
+            A.Dock = DockStyle.Fill;
+            this.pnlDload.Controls.Add(A);
+            this.pnlDload.Tag = A;
+            A.Show();
+        }
+        private void Screen_Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            OpenBooksLoad(new Screen_Books_Load());
         }
     }
 }

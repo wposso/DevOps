@@ -52,6 +52,7 @@
             btnexit = new Button();
             button3 = new Button();
             btnminimized = new Button();
+            label2 = new Label();
             panel1.SuspendLayout();
             pnlload.SuspendLayout();
             panel2.SuspendLayout();
@@ -69,7 +70,7 @@
             panel1.Controls.Add(label4);
             panel1.Location = new Point(717, 82);
             panel1.Name = "panel1";
-            panel1.Size = new Size(505, 618);
+            panel1.Size = new Size(536, 655);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
@@ -77,7 +78,7 @@
             // 
             lblgetstarted.AutoSize = true;
             lblgetstarted.Font = new Font("Segoe UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblgetstarted.Location = new Point(112, 24);
+            lblgetstarted.Location = new Point(131, 28);
             lblgetstarted.Name = "lblgetstarted";
             lblgetstarted.Size = new Size(276, 62);
             lblgetstarted.TabIndex = 13;
@@ -88,7 +89,7 @@
             lblregister.AutoSize = true;
             lblregister.FlatStyle = FlatStyle.Flat;
             lblregister.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblregister.Location = new Point(157, 24);
+            lblregister.Location = new Point(185, 31);
             lblregister.Name = "lblregister";
             lblregister.Size = new Size(195, 60);
             lblregister.TabIndex = 12;
@@ -100,8 +101,8 @@
             lblloginhere.AutoSize = true;
             lblloginhere.Cursor = Cursors.Hand;
             lblloginhere.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblloginhere.ForeColor = Color.Teal;
-            lblloginhere.Location = new Point(280, 574);
+            lblloginhere.ForeColor = Color.Black;
+            lblloginhere.Location = new Point(298, 570);
             lblloginhere.Name = "lblloginhere";
             lblloginhere.Size = new Size(82, 20);
             lblloginhere.TabIndex = 11;
@@ -112,7 +113,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(162, 574);
+            label5.Location = new Point(180, 570);
             label5.Name = "label5";
             label5.Size = new Size(127, 20);
             label5.TabIndex = 10;
@@ -129,7 +130,7 @@
             pnlload.Controls.Add(txtemail);
             pnlload.Controls.Add(txtpasswordL);
             pnlload.Controls.Add(btnlogin);
-            pnlload.Location = new Point(58, 128);
+            pnlload.Location = new Point(72, 124);
             pnlload.Name = "pnlload";
             pnlload.Size = new Size(401, 443);
             pnlload.TabIndex = 9;
@@ -142,9 +143,9 @@
             lblerrorcredentials2.ForeColor = Color.Red;
             lblerrorcredentials2.Location = new Point(73, 201);
             lblerrorcredentials2.Name = "lblerrorcredentials2";
-            lblerrorcredentials2.Size = new Size(117, 17);
+            lblerrorcredentials2.Size = new Size(131, 17);
             lblerrorcredentials2.TabIndex = 7;
-            lblerrorcredentials2.Text = "*Invalid credentials";
+            lblerrorcredentials2.Text = "*Incorrect credentials";
             lblerrorcredentials2.Visible = false;
             // 
             // lblerrorcredentials1
@@ -152,11 +153,11 @@
             lblerrorcredentials1.AutoSize = true;
             lblerrorcredentials1.Font = new Font("Segoe UI", 7.8F);
             lblerrorcredentials1.ForeColor = Color.Red;
-            lblerrorcredentials1.Location = new Point(73, 127);
+            lblerrorcredentials1.Location = new Point(73, 117);
             lblerrorcredentials1.Name = "lblerrorcredentials1";
-            lblerrorcredentials1.Size = new Size(117, 17);
+            lblerrorcredentials1.Size = new Size(133, 17);
             lblerrorcredentials1.TabIndex = 6;
-            lblerrorcredentials1.Text = "*Invalid credentials";
+            lblerrorcredentials1.Text = "*Incorrect credencials";
             lblerrorcredentials1.Visible = false;
             // 
             // txtpassword
@@ -171,7 +172,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(73, 72);
+            label1.Location = new Point(73, 62);
             label1.Name = "label1";
             label1.Size = new Size(46, 20);
             label1.TabIndex = 4;
@@ -181,7 +182,7 @@
             // 
             chshowpassword.AutoSize = true;
             chshowpassword.Cursor = Cursors.Hand;
-            chshowpassword.Location = new Point(198, 219);
+            chshowpassword.Location = new Point(198, 231);
             chshowpassword.Name = "chshowpassword";
             chshowpassword.Size = new Size(132, 24);
             chshowpassword.TabIndex = 3;
@@ -195,7 +196,7 @@
             txtemail.BorderStyle = BorderStyle.None;
             txtemail.Cursor = Cursors.IBeam;
             txtemail.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtemail.Location = new Point(73, 95);
+            txtemail.Location = new Point(73, 85);
             txtemail.Name = "txtemail";
             txtemail.Size = new Size(257, 31);
             txtemail.TabIndex = 2;
@@ -209,13 +210,14 @@
             txtpasswordL.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtpasswordL.Location = new Point(73, 170);
             txtpasswordL.Name = "txtpasswordL";
+            txtpasswordL.PasswordChar = '•';
             txtpasswordL.Size = new Size(257, 31);
             txtpasswordL.TabIndex = 1;
             txtpasswordL.TextChanged += txtpasswordL_TextChanged;
             // 
             // btnlogin
             // 
-            btnlogin.BackColor = Color.Teal;
+            btnlogin.BackColor = Color.Black;
             btnlogin.Cursor = Cursors.Hand;
             btnlogin.FlatAppearance.BorderSize = 3;
             btnlogin.FlatStyle = FlatStyle.Flat;
@@ -234,8 +236,8 @@
             lblaccount.AutoSize = true;
             lblaccount.Cursor = Cursors.Hand;
             lblaccount.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblaccount.ForeColor = Color.Teal;
-            lblaccount.Location = new Point(280, 570);
+            lblaccount.ForeColor = Color.Black;
+            lblaccount.Location = new Point(290, 570);
             lblaccount.Name = "lblaccount";
             lblaccount.Size = new Size(72, 20);
             lblaccount.TabIndex = 8;
@@ -245,7 +247,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(185, 570);
+            label4.Location = new Point(195, 570);
             label4.Name = "label4";
             label4.Size = new Size(104, 20);
             label4.TabIndex = 7;
@@ -255,7 +257,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(72, 407);
             label6.Name = "label6";
             label6.Size = new Size(307, 60);
@@ -284,7 +286,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.ForeColor = Color.White;
+            label8.ForeColor = Color.Black;
             label8.Location = new Point(72, 607);
             label8.Name = "label8";
             label8.Size = new Size(304, 20);
@@ -294,7 +296,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.ForeColor = Color.White;
+            label9.ForeColor = Color.Black;
             label9.Location = new Point(185, 626);
             label9.Name = "label9";
             label9.Size = new Size(340, 20);
@@ -303,6 +305,7 @@
             // 
             // btnexit
             // 
+            btnexit.BackColor = Color.Black;
             btnexit.Cursor = Cursors.Hand;
             btnexit.FlatStyle = FlatStyle.Flat;
             btnexit.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -312,11 +315,12 @@
             btnexit.Size = new Size(39, 33);
             btnexit.TabIndex = 12;
             btnexit.Text = "X";
-            btnexit.UseVisualStyleBackColor = true;
+            btnexit.UseVisualStyleBackColor = false;
             btnexit.Click += btnexit_Click;
             // 
             // button3
             // 
+            button3.BackColor = Color.Black;
             button3.Cursor = Cursors.Hand;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -326,10 +330,11 @@
             button3.Size = new Size(39, 33);
             button3.TabIndex = 13;
             button3.Text = "O";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             // 
             // btnminimized
             // 
+            btnminimized.BackColor = Color.Black;
             btnminimized.Cursor = Cursors.Hand;
             btnminimized.FlatStyle = FlatStyle.Flat;
             btnminimized.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -338,16 +343,28 @@
             btnminimized.Name = "btnminimized";
             btnminimized.Size = new Size(39, 33);
             btnminimized.TabIndex = 14;
-            btnminimized.Text = "--";
-            btnminimized.UseVisualStyleBackColor = true;
+            btnminimized.Text = "←";
+            btnminimized.UseVisualStyleBackColor = false;
             btnminimized.Click += btnminimized_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 72F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(12, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(213, 159);
+            label2.TabIndex = 15;
+            label2.Text = "C#";
             // 
             // Screen_Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Teal;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(1307, 770);
+            Controls.Add(label2);
             Controls.Add(btnminimized);
             Controls.Add(button3);
             Controls.Add(btnexit);
@@ -396,5 +413,6 @@
         private Label lblerrorcredentials1;
         private Label lblregister;
         private Label lblgetstarted;
+        private Label label2;
     }
 }
