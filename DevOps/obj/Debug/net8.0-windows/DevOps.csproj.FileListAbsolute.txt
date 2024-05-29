@@ -1,0 +1,76 @@
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\DevOps.exe
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\DevOps.deps.json
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\DevOps.runtimeconfig.json
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\DevOps.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\DevOps.pdb
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.csproj.GenerateResource.cache
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.AssemblyInfoInputs.cache
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.AssemblyInfo.cs
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.csproj.CoreCompileInputs.cache
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\refint\DevOps.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.pdb
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.genruntimeconfig.cache
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\ref\DevOps.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.Screen_Login.resources
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.Screen_Register.resources
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.Screen_Reload.resources
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.csproj.AssemblyReference.cache
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.csproj.Up2Date
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\DevOps.exe
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\DevOps.deps.json
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\DevOps.runtimeconfig.json
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\DevOps.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\DevOps.pdb
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.csproj.AssemblyReference.cache
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.Screen_Login.resources
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.Screen_Register.resources
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.Screen_Reload.resources
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.csproj.GenerateResource.cache
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.AssemblyInfoInputs.cache
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.AssemblyInfo.cs
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.csproj.CoreCompileInputs.cache
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.csproj.Up2Date
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\refint\DevOps.dll
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.pdb
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.genruntimeconfig.cache
+C:\Users\soporte MPOS\Downloads\DevOps\DevOps\obj\Debug\net8.0-windows\ref\DevOps.dll
