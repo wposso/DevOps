@@ -7,7 +7,7 @@ namespace DevOps
     public partial class Screen_Login : Form
     {
         //Database connection
-        SqlConnection connection = new SqlConnection("server=192.168.1.184; database=MYDataBase; integrated security=true");
+        SqlConnection connection = new SqlConnection("server=ADMINSYSTEM; database=MYDataBase; integrated security=true");
 
         public Screen_Login()
         {
@@ -62,12 +62,12 @@ namespace DevOps
 
             if (lblaccount.Visible && label4.Visible == true)
             {
-                if(lblgetstarted.Visible == true) 
+                if (lblgetstarted.Visible == true)
                 {
                     lblgetstarted.Visible = false;
                     lblregister.Visible = true;
                 }
-                else 
+                else
                 {
                     lblgetstarted.Visible = true;
                     lblregister.Visible = false;
@@ -80,7 +80,7 @@ namespace DevOps
             }
             else
             {
-                
+
                 lblaccount.Visible = true;
                 label4.Visible = true;
                 lblloginhere.Visible = false;
@@ -96,12 +96,12 @@ namespace DevOps
 
             if (lblloginhere.Visible && label5.Visible == true)
             {
-                if(lblregister.Visible == true) 
+                if (lblregister.Visible == true)
                 {
                     lblregister.Visible = false;
                     lblgetstarted.Visible = true;
                 }
-                else 
+                else
                 {
                     lblregister.Visible = true;
                     lblgetstarted.Visible = false;
@@ -114,7 +114,7 @@ namespace DevOps
             }
             else
             {
-                
+
                 lblloginhere.Visible = true;
                 label5.Visible = true;
                 lblaccount.Visible = false;
@@ -151,7 +151,7 @@ namespace DevOps
             lblerrorcredentials2.Visible = false;
         }
 
-        private void txtpasswordL_Click(object sender, EventArgs e) 
+        private void txtpasswordL_Click(object sender, EventArgs e)
         {
             lblerrorcredentials1.Visible = false;
             lblerrorcredentials2.Visible = false;
@@ -193,14 +193,19 @@ namespace DevOps
 
         private void txtemail_TextChanged(object sender, EventArgs e)
         {
-            
 
-          
+
+
         }
 
         private void txtpasswordL_TextChanged(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void Screen_Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

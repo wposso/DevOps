@@ -377,6 +377,7 @@
             Name = "Screen_Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Screen Login";
+            Load += Screen_Login_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             pnlload.ResumeLayout(false);

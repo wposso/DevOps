@@ -1629,19 +1629,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\soporte MPOS\\.nuget\\packages\\": {}
+    "C:\\Users\\willi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\soporte MPOS\\Downloads\\DevOps\\DevOps\\DevOps.csproj",
+      "projectUniqueName": "C:\\Users\\willi\\Source\\Repos\\DevOps\\DevOps\\DevOps.csproj",
       "projectName": "DevOps",
-      "projectPath": "C:\\Users\\soporte MPOS\\Downloads\\DevOps\\DevOps\\DevOps.csproj",
-      "packagesPath": "C:\\Users\\soporte MPOS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\soporte MPOS\\Downloads\\DevOps\\DevOps\\obj\\",
+      "projectPath": "C:\\Users\\willi\\Source\\Repos\\DevOps\\DevOps\\DevOps.csproj",
+      "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\willi\\Source\\Repos\\DevOps\\DevOps\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\soporte MPOS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

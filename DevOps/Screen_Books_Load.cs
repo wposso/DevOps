@@ -15,7 +15,7 @@ namespace DevOps
     {
 
         //Database connection
-        SqlConnection connection = new SqlConnection("server=192.168.1.184; database=MYDataBase; integrated security=true");
+        SqlConnection connection = new SqlConnection("server=ADMINSYSTEM; database=MYDataBase; integrated security=true");
 
 
         public Screen_Books_Load()
@@ -34,7 +34,7 @@ namespace DevOps
 
             try
             {
-                SqlCommand script = new SqlCommand("select * from Books", connection);
+                SqlCommand script = new SqlCommand("select ID,tittle,autor,busy from Books", connection);
                 DataTable dataTable = new DataTable();
                 SqlDataReader reader = script.ExecuteReader();
                 dataTable.Load(reader);
@@ -44,6 +44,12 @@ namespace DevOps
             {
                 MessageBox.Show("Has ocurred an error");
             }
+
+        }
+
+        private void dtgdemo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
