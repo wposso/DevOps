@@ -163,3 +163,5 @@ C:\Users\soporte MPOS\Source\Repos\wposso\DevOps\DevOps\obj\Debug\net8.0-windows
 C:\Users\soporte MPOS\Source\Repos\wposso\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.genruntimeconfig.cache
 C:\Users\soporte MPOS\Source\Repos\wposso\DevOps\DevOps\obj\Debug\net8.0-windows\ref\DevOps.dll
 C:\Users\soporte MPOS\Source\Repos\wposso\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.Screen_Books_Register.resources
+C:\Users\soporte MPOS\Source\Repos\wposso\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.Screen_Books_Update.resources
+C:\Users\soporte MPOS\Source\Repos\wposso\DevOps\DevOps\obj\Debug\net8.0-windows\DevOps.Screen_Books_Delete.resources

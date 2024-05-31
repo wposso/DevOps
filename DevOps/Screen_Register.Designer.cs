@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             pnlload = new Panel();
+            label4 = new Label();
             label3 = new Label();
             txtemail = new TextBox();
             label2 = new Label();
@@ -39,7 +40,6 @@
             txtlastname = new TextBox();
             txtpasswordR = new TextBox();
             btnsave = new Button();
-            label4 = new Label();
             pnlload.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,6 +61,18 @@
             pnlload.Name = "pnlload";
             pnlload.Size = new Size(401, 443);
             pnlload.TabIndex = 10;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Black;
+            label4.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(116, 374);
+            label4.Name = "label4";
+            label4.Size = new Size(49, 35);
+            label4.TabIndex = 16;
+            label4.Text = "💾";
             // 
             // label3
             // 
@@ -170,18 +182,6 @@
             btnsave.Text = "SAVE";
             btnsave.UseVisualStyleBackColor = false;
             btnsave.Click += btnsave_Click;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Black;
-            label4.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(77, 374);
-            label4.Name = "label4";
-            label4.Size = new Size(49, 35);
-            label4.TabIndex = 16;
-            label4.Text = "💾";
             // 
             // Screen_Register
             // 

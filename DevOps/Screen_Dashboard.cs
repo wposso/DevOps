@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -43,12 +44,27 @@ namespace DevOps
         }
         private void Screen_Dashboard_Load(object sender, EventArgs e)
         {
-
+            lblDloans.Location = new Point(134, 389);
+            lblDLicon.Location = new Point(51, 374);
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            OpenBooksLoad(new Screen_Books_Load());
+
+
+            if (pnlDL.Visible == false)
+            {
+                pnlDL.Visible = true;
+                lblDloans.Location = new Point(134, 489);
+                lblDLicon.Location = new Point(51, 474);
+            }
+            else
+            {
+                pnlDL.Visible = false;
+                lblDloans.Location = new Point(134, 389);
+                lblDLicon.Location = new Point(51, 374);
+            }
+
         }
 
         private void btnexit_Click(object sender, EventArgs e)
@@ -59,6 +75,11 @@ namespace DevOps
         private void btnminimized_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnDbooks_Click(object sender, EventArgs e)
+        {
+            OpenBooksLoad(new Screen_Books_Load());
         }
     }
 }

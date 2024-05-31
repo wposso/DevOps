@@ -16,14 +16,21 @@ namespace DevOps
             txtpasswordL.Click += new EventHandler(txtpasswordL_Click);
         }
 
+    
+
         //References
         Screen_Register screen_register = new Screen_Register();
         Screen_Reload Screen_Reload = new Screen_Reload();
         Screen_Dashboard Screen_Dashboard = new Screen_Dashboard();
 
+        //Variables
+        private bool isPasswordVisible = false;
+
         private void btnexit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+
+            lblShowpassword.Click += new EventHandler(lblShowPassword_Click);
         }
 
         private void btnminimized_Click(object sender, EventArgs e)
@@ -206,6 +213,17 @@ namespace DevOps
         private void Screen_Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblShowpassword_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lblShowPassword_Click(object sender, EventArgs e)
+        {
+            isPasswordVisible = !isPasswordVisible;
+            txtpasswordL.PasswordChar = isPasswordVisible ? '\0' : '•';
         }
     }
 }

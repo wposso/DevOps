@@ -42,6 +42,7 @@
             label5 = new Label();
             txtBid = new TextBox();
             lblicon = new Label();
+            label6 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -62,9 +63,9 @@
             btnBsave.FlatStyle = FlatStyle.Flat;
             btnBsave.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnBsave.ForeColor = Color.White;
-            btnBsave.Location = new Point(162, 354);
+            btnBsave.Location = new Point(136, 365);
             btnBsave.Name = "btnBsave";
-            btnBsave.Size = new Size(196, 39);
+            btnBsave.Size = new Size(245, 39);
             btnBsave.TabIndex = 10;
             btnBsave.Text = "SAVE";
             btnBsave.UseVisualStyleBackColor = false;
@@ -154,11 +155,11 @@
             // 
             lblbooksaved.AutoSize = true;
             lblbooksaved.FlatStyle = FlatStyle.Flat;
-            lblbooksaved.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblbooksaved.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblbooksaved.ForeColor = Color.LimeGreen;
-            lblbooksaved.Location = new Point(162, 418);
+            lblbooksaved.Location = new Point(163, 418);
             lblbooksaved.Name = "lblbooksaved";
-            lblbooksaved.Size = new Size(190, 23);
+            lblbooksaved.Size = new Size(186, 23);
             lblbooksaved.TabIndex = 15;
             lblbooksaved.Text = "✓ Book saved sucessful";
             lblbooksaved.Visible = false;
@@ -167,11 +168,11 @@
             // 
             lblbookerror.AutoSize = true;
             lblbookerror.FlatStyle = FlatStyle.Flat;
-            lblbookerror.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblbookerror.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblbookerror.ForeColor = Color.Red;
-            lblbookerror.Location = new Point(210, 418);
+            lblbookerror.Location = new Point(209, 418);
             lblbookerror.Name = "lblbookerror";
-            lblbookerror.Size = new Size(129, 23);
+            lblbookerror.Size = new Size(127, 23);
             lblbookerror.TabIndex = 16;
             lblbookerror.Text = "Book not saved";
             lblbookerror.Visible = false;
@@ -202,18 +203,31 @@
             lblicon.FlatStyle = FlatStyle.Flat;
             lblicon.Font = new Font("Segoe UI Light", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblicon.ForeColor = Color.Red;
-            lblicon.Location = new Point(181, 418);
+            lblicon.Location = new Point(180, 418);
             lblicon.Name = "lblicon";
             lblicon.Size = new Size(33, 23);
             lblicon.TabIndex = 19;
             lblicon.Text = "⚠";
             lblicon.Visible = false;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Black;
+            label6.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(163, 366);
+            label6.Name = "label6";
+            label6.Size = new Size(49, 35);
+            label6.TabIndex = 32;
+            label6.Text = "📋";
+            // 
             // Screen_Books_Register
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(522, 450);
+            Controls.Add(label6);
             Controls.Add(lblicon);
             Controls.Add(label5);
             Controls.Add(txtBid);
@@ -252,5 +266,6 @@
         private Label label5;
         private TextBox txtBid;
         private Label lblicon;
+        private Label label6;
     }
 }

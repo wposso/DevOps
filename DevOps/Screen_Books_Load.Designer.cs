@@ -70,12 +70,13 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(690, 591);
+            button1.Location = new Point(692, 590);
             button1.Name = "button1";
             button1.Size = new Size(196, 39);
             button1.TabIndex = 10;
             button1.Text = "DELETE";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -90,6 +91,7 @@
             button2.TabIndex = 11;
             button2.Text = "UPDATE";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // dtgBooksLoad
             // 
@@ -217,7 +219,7 @@
             label5.BackColor = Color.Black;
             label5.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(690, 592);
+            label5.Location = new Point(700, 591);
             label5.Name = "label5";
             label5.Size = new Size(49, 35);
             label5.TabIndex = 16;

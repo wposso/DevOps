@@ -26,6 +26,8 @@ namespace DevOps
 
         //References
         Screen_Books_Register screen_books_register = new Screen_Books_Register();
+        Screen_Books_Update screen_books_update = new Screen_Books_Update();
+        Screen_Books_Delete screen_books_delete = new Screen_Books_Delete();
 
         private void dtgBooksLoad_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -55,7 +57,8 @@ namespace DevOps
 
             connection.Close();
 
-
+            //Reload Screens
+            
 
         }
 
@@ -93,6 +96,16 @@ namespace DevOps
             }
 
             connection.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            screen_books_update.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            screen_books_delete.Show();
         }
     }
 }

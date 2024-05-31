@@ -27,6 +27,7 @@ namespace DevOps
             txtBauthor.Click += new EventHandler(txtBauthor_Click);
             txtBtittle.Click += new EventHandler(txtBEtittle_Click);
             txtBauthor.Click += new EventHandler(txtBEauthor_Click);
+            txtBid.Click += new EventHandler(txtBEid_Click);
         }
 
         private void TxtBauthor_Click(object? sender, EventArgs e)
@@ -58,7 +59,7 @@ namespace DevOps
             try
             {
                 connection.Open();
-                string script = ("insert into Books(ID, Tittle, Author, isbusy) values(" + txtBid.Text+",'" + txtBtittle.Text + "','" + txtBauthor.Text + "',0)");
+                string script = ("insert into Books values(" + txtBid.Text + ",'" + txtBtittle.Text + "','" + txtBauthor.Text + "',0)");
                 SqlCommand send = new SqlCommand(script, connection);
                 send.ExecuteNonQuery();
 
@@ -67,69 +68,72 @@ namespace DevOps
                 txtBtittle.Clear();
                 connection.Close();
 
-                if(lblbooksaved.Visible == false) 
-                { 
-                    lblbooksaved.Visible = true;
-                }
-                else 
+                if (lblbooksaved.Visible == false)
                 {
                     lblbooksaved.Visible = true;
                 }
+                else
+                {
+                    lblbooksaved.Visible = false;
+                }
 
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-                
+
                 txtBauthor.Clear();
                 txtBid.Clear();
                 txtBtittle.Clear();
 
-                if(lblbookerror.Visible && lblicon.Visible == false) 
-                {
-                    lblbookerror.Visible = true;
-                    lblicon.Visible = true;
-                }
-                else 
-                {
-                    lblbookerror.Visible = false;
-                    lblicon.Visible = false;
-                }
+                lblbookerror.Visible = true;
+                lblicon.Visible = true;
+
+
             }
 
-            
-            
+
+
         }
 
         //Control lblsaved .visible
-        private void txtBtittle_Click(object sender, EventArgs e) 
+        private void txtBtittle_Click(object sender, EventArgs e)
         {
-            if(lblbooksaved.Visible == true) 
-            { 
-                lblbooksaved.Visible=false;
+            if (lblbooksaved.Visible == true)
+            {
+                lblbooksaved.Visible = false;
             }
         }
 
-        private void txtBauthor_Click(object sender, EventArgs e) 
+        private void txtBauthor_Click(object sender, EventArgs e)
         {
-            if(lblbooksaved.Visible == true) 
+            if (lblbooksaved.Visible == true)
             {
                 lblbooksaved.Visible = false;
             }
         }
 
         //Control lblerror .visible
-        private void txtBEtittle_Click (object sender, EventArgs e) 
+        private void txtBEtittle_Click(object sender, EventArgs e)
         {
-            if(lblbookerror.Visible && lblicon.Visible== true) 
+            if (lblbookerror.Visible && lblicon.Visible == true)
             {
                 lblbookerror.Visible = false;
                 lblicon.Visible = false;
             }
         }
 
-        private void txtBEauthor_Click(Object sender, EventArgs e) 
+        private void txtBEauthor_Click(Object sender, EventArgs e)
         {
-            if(lblbookerror.Visible && lblicon.Visible == true) 
+            if (lblbookerror.Visible && lblicon.Visible == true)
+            {
+                lblbookerror.Visible = false;
+                lblicon.Visible = false;
+            }
+        }
+
+        private void txtBEid_Click(Object sender, EventArgs e)
+        {
+            if (lblbookerror.Visible && lblicon.Visible == true)
             {
                 lblbookerror.Visible = false;
                 lblicon.Visible = false;

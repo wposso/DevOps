@@ -35,12 +35,14 @@
             txtemailreload = new TextBox();
             txtpasswordreload = new TextBox();
             btnloginreload = new Button();
+            label3 = new Label();
             pnlreload.SuspendLayout();
             SuspendLayout();
             // 
             // pnlreload
             // 
             pnlreload.BackColor = Color.White;
+            pnlreload.Controls.Add(label3);
             pnlreload.Controls.Add(txtpassword);
             pnlreload.Controls.Add(label1);
             pnlreload.Controls.Add(chpasswordreload);
@@ -122,6 +124,18 @@
             btnloginreload.UseVisualStyleBackColor = false;
             btnloginreload.Click += btnloginreload_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Black;
+            label3.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(81, 374);
+            label3.Name = "label3";
+            label3.Size = new Size(49, 35);
+            label3.TabIndex = 16;
+            label3.Text = "👤";
+            // 
             // Screen_Reload
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -146,5 +160,6 @@
         private TextBox txtemailreload;
         private TextBox txtpasswordreload;
         private Button btnloginreload;
+        private Label label3;
     }
 }
