@@ -39,6 +39,9 @@
             label4 = new Label();
             lblbooksaved = new Label();
             lblbookerror = new Label();
+            label5 = new Label();
+            txtBid = new TextBox();
+            lblicon = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,7 +50,7 @@
             txtBtittle.BackColor = SystemColors.ScrollBar;
             txtBtittle.BorderStyle = BorderStyle.None;
             txtBtittle.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtBtittle.Location = new Point(144, 127);
+            txtBtittle.Location = new Point(136, 194);
             txtBtittle.Name = "txtBtittle";
             txtBtittle.Size = new Size(245, 36);
             txtBtittle.TabIndex = 1;
@@ -72,7 +75,7 @@
             txtBauthor.BackColor = SystemColors.ScrollBar;
             txtBauthor.BorderStyle = BorderStyle.None;
             txtBauthor.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtBauthor.Location = new Point(144, 208);
+            txtBauthor.Location = new Point(136, 275);
             txtBauthor.Name = "txtBauthor";
             txtBauthor.Size = new Size(245, 36);
             txtBauthor.TabIndex = 11;
@@ -81,7 +84,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(144, 101);
+            label1.Location = new Point(136, 168);
             label1.Name = "label1";
             label1.Size = new Size(48, 23);
             label1.TabIndex = 12;
@@ -91,7 +94,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(144, 182);
+            label2.Location = new Point(136, 249);
             label2.Name = "label2";
             label2.Size = new Size(63, 23);
             label2.TabIndex = 13;
@@ -103,7 +106,7 @@
             label3.BackColor = Color.Black;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(50, 27);
+            label3.Location = new Point(51, 27);
             label3.Name = "label3";
             label3.Size = new Size(341, 28);
             label3.TabIndex = 1;
@@ -139,13 +142,13 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Black;
-            label4.Font = new Font("Segoe UI Black", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Segoe UI Light", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(14, 20);
+            label4.Location = new Point(3, 20);
             label4.Name = "label4";
-            label4.Size = new Size(42, 38);
+            label4.Size = new Size(55, 38);
             label4.TabIndex = 2;
-            label4.Text = "☼";
+            label4.Text = "💡";
             // 
             // lblbooksaved
             // 
@@ -153,7 +156,7 @@
             lblbooksaved.FlatStyle = FlatStyle.Flat;
             lblbooksaved.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblbooksaved.ForeColor = Color.LimeGreen;
-            lblbooksaved.Location = new Point(168, 418);
+            lblbooksaved.Location = new Point(162, 418);
             lblbooksaved.Name = "lblbooksaved";
             lblbooksaved.Size = new Size(190, 23);
             lblbooksaved.TabIndex = 15;
@@ -166,18 +169,54 @@
             lblbookerror.FlatStyle = FlatStyle.Flat;
             lblbookerror.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblbookerror.ForeColor = Color.Red;
-            lblbookerror.Location = new Point(198, 418);
+            lblbookerror.Location = new Point(210, 418);
             lblbookerror.Name = "lblbookerror";
-            lblbookerror.Size = new Size(143, 23);
+            lblbookerror.Size = new Size(129, 23);
             lblbookerror.TabIndex = 16;
-            lblbookerror.Text = "🇽 Book not saved";
+            lblbookerror.Text = "Book not saved";
             lblbookerror.Visible = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(136, 94);
+            label5.Name = "label5";
+            label5.Size = new Size(27, 23);
+            label5.TabIndex = 18;
+            label5.Text = "ID";
+            // 
+            // txtBid
+            // 
+            txtBid.BackColor = SystemColors.ScrollBar;
+            txtBid.BorderStyle = BorderStyle.None;
+            txtBid.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBid.Location = new Point(136, 120);
+            txtBid.Name = "txtBid";
+            txtBid.Size = new Size(245, 36);
+            txtBid.TabIndex = 17;
+            // 
+            // lblicon
+            // 
+            lblicon.AutoSize = true;
+            lblicon.FlatStyle = FlatStyle.Flat;
+            lblicon.Font = new Font("Segoe UI Light", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblicon.ForeColor = Color.Red;
+            lblicon.Location = new Point(181, 418);
+            lblicon.Name = "lblicon";
+            lblicon.Size = new Size(33, 23);
+            lblicon.TabIndex = 19;
+            lblicon.Text = "⚠";
+            lblicon.Visible = false;
             // 
             // Screen_Books_Register
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(522, 450);
+            Controls.Add(lblicon);
+            Controls.Add(label5);
+            Controls.Add(txtBid);
             Controls.Add(lblbookerror);
             Controls.Add(lblbooksaved);
             Controls.Add(panel1);
@@ -210,5 +249,8 @@
         private Button btnBback;
         private Label lblbooksaved;
         private Label lblbookerror;
+        private Label label5;
+        private TextBox txtBid;
+        private Label lblicon;
     }
 }

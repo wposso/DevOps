@@ -39,12 +39,14 @@
             txtlastname = new TextBox();
             txtpasswordR = new TextBox();
             btnsave = new Button();
+            label4 = new Label();
             pnlload.SuspendLayout();
             SuspendLayout();
             // 
             // pnlload
             // 
             pnlload.BackColor = Color.White;
+            pnlload.Controls.Add(label4);
             pnlload.Controls.Add(label3);
             pnlload.Controls.Add(txtemail);
             pnlload.Controls.Add(label2);
@@ -169,6 +171,18 @@
             btnsave.UseVisualStyleBackColor = false;
             btnsave.Click += btnsave_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Black;
+            label4.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(77, 374);
+            label4.Name = "label4";
+            label4.Size = new Size(49, 35);
+            label4.TabIndex = 16;
+            label4.Text = "💾";
+            // 
             // Screen_Register
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -197,5 +211,6 @@
         private TextBox txtlastname;
         private TextBox txtpasswordR;
         private Button btnsave;
+        private Label label4;
     }
 }

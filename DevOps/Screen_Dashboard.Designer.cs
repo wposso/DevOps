@@ -77,13 +77,13 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI Black", 72F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Font = new Font("Segoe UI Light", 72F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.White;
-            label8.Location = new Point(88, 10);
+            label8.Location = new Point(65, 15);
             label8.Name = "label8";
-            label8.Size = new Size(193, 159);
+            label8.Size = new Size(232, 159);
             label8.TabIndex = 14;
-            label8.Text = "W";
+            label8.Text = "👨🏻‍💻";
             // 
             // label7
             // 
@@ -123,11 +123,11 @@
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI Black", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.White;
-            label11.Location = new Point(65, 315);
+            label11.Location = new Point(36, 310);
             label11.Name = "label11";
-            label11.Size = new Size(55, 60);
+            label11.Size = new Size(86, 60);
             label11.TabIndex = 10;
-            label11.Text = "B";
+            label11.Text = "📚";
             // 
             // label9
             // 

@@ -34,6 +34,7 @@
             lblloginhere = new Label();
             label5 = new Label();
             pnlload = new Panel();
+            label3 = new Label();
             lblerrorcredentials2 = new Label();
             lblerrorcredentials1 = new Label();
             txtpassword = new Label();
@@ -53,6 +54,7 @@
             button3 = new Button();
             btnminimized = new Button();
             label2 = new Label();
+            label10 = new Label();
             panel1.SuspendLayout();
             pnlload.SuspendLayout();
             panel2.SuspendLayout();
@@ -122,6 +124,7 @@
             // 
             // pnlload
             // 
+            pnlload.Controls.Add(label3);
             pnlload.Controls.Add(lblerrorcredentials2);
             pnlload.Controls.Add(lblerrorcredentials1);
             pnlload.Controls.Add(txtpassword);
@@ -135,6 +138,18 @@
             pnlload.Size = new Size(401, 443);
             pnlload.TabIndex = 9;
             pnlload.Paint += pnlload_Paint;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Black;
+            label3.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(76, 374);
+            label3.Name = "label3";
+            label3.Size = new Size(49, 35);
+            label3.TabIndex = 15;
+            label3.Text = "👤";
             // 
             // lblerrorcredentials2
             // 
@@ -358,12 +373,24 @@
             label2.TabIndex = 15;
             label2.Text = "C#";
             // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI Light", 72F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(12, 265);
+            label10.Name = "label10";
+            label10.Size = new Size(232, 159);
+            label10.TabIndex = 16;
+            label10.Text = "👨🏻‍💻";
+            // 
             // Screen_Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(1307, 770);
+            Controls.Add(label10);
             Controls.Add(label2);
             Controls.Add(btnminimized);
             Controls.Add(button3);
@@ -415,5 +442,7 @@
         private Label lblregister;
         private Label lblgetstarted;
         private Label label2;
+        private Label label3;
+        private Label label10;
     }
 }

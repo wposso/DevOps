@@ -58,11 +58,12 @@ namespace DevOps
             try
             {
                 connection.Open();
-                string script = ("insert into Books (tittle,author,busy) values('" + txtBtittle.Text + "','" + txtBauthor.Text + "',0)");
+                string script = ("insert into Books(ID, Tittle, Author, isbusy) values(" + txtBid.Text+",'" + txtBtittle.Text + "','" + txtBauthor.Text + "',0)");
                 SqlCommand send = new SqlCommand(script, connection);
                 send.ExecuteNonQuery();
 
                 txtBauthor.Clear();
+                txtBid.Clear();
                 txtBtittle.Clear();
                 connection.Close();
 
@@ -78,17 +79,20 @@ namespace DevOps
             }
             catch (Exception ex) 
             {
-                MessageBox.Show("Has error ocurred");
+                
                 txtBauthor.Clear();
+                txtBid.Clear();
                 txtBtittle.Clear();
 
-                if(lblbookerror.Visible == false) 
+                if(lblbookerror.Visible && lblicon.Visible == false) 
                 {
                     lblbookerror.Visible = true;
+                    lblicon.Visible = true;
                 }
                 else 
                 {
                     lblbookerror.Visible = false;
+                    lblicon.Visible = false;
                 }
             }
 
@@ -116,17 +120,19 @@ namespace DevOps
         //Control lblerror .visible
         private void txtBEtittle_Click (object sender, EventArgs e) 
         {
-            if(lblbookerror.Visible == true) 
+            if(lblbookerror.Visible && lblicon.Visible== true) 
             {
                 lblbookerror.Visible = false;
+                lblicon.Visible = false;
             }
         }
 
         private void txtBEauthor_Click(Object sender, EventArgs e) 
         {
-            if(lblbookerror.Visible == true) 
+            if(lblbookerror.Visible && lblicon.Visible == true) 
             {
                 lblbookerror.Visible = false;
+                lblicon.Visible = false;
             }
         }
     }
