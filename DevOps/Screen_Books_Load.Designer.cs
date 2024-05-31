@@ -38,12 +38,9 @@
             button2 = new Button();
             dtgBooksLoad = new DataGridView();
             panel1 = new Panel();
+            btnreloadview = new Button();
             label2 = new Label();
             label1 = new Label();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dtgBooksLoad).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -55,12 +52,13 @@
             btnback.FlatStyle = FlatStyle.Flat;
             btnback.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnback.ForeColor = Color.White;
-            btnback.Location = new Point(192, 588);
+            btnback.Location = new Point(177, 591);
             btnback.Name = "btnback";
             btnback.Size = new Size(196, 39);
             btnback.TabIndex = 9;
             btnback.Text = "REGISTER";
             btnback.UseVisualStyleBackColor = false;
+            btnback.Click += btnback_Click;
             // 
             // button1
             // 
@@ -69,7 +67,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(621, 588);
+            button1.Location = new Point(690, 591);
             button1.Name = "button1";
             button1.Size = new Size(196, 39);
             button1.TabIndex = 10;
@@ -83,7 +81,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(406, 588);
+            button2.Location = new Point(434, 591);
             button2.Name = "button2";
             button2.Size = new Size(196, 39);
             button2.TabIndex = 11;
@@ -99,7 +97,7 @@
             dtgBooksLoad.ClipboardCopyMode = DataGridViewClipboardCopyMode.Disable;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = SystemColors.Control;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
@@ -107,7 +105,6 @@
             dtgBooksLoad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dtgBooksLoad.ColumnHeadersHeight = 50;
             dtgBooksLoad.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dtgBooksLoad.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = SystemColors.Window;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -116,12 +113,12 @@
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             dtgBooksLoad.DefaultCellStyle = dataGridViewCellStyle3;
-            dtgBooksLoad.Location = new Point(38, 93);
+            dtgBooksLoad.Location = new Point(74, 97);
             dtgBooksLoad.Name = "dtgBooksLoad";
             dtgBooksLoad.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = SystemColors.Control;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
             dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
@@ -129,7 +126,7 @@
             dtgBooksLoad.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dtgBooksLoad.RowHeadersWidth = 50;
             dtgBooksLoad.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dtgBooksLoad.RowsDefaultCellStyle = dataGridViewCellStyle5;
             dtgBooksLoad.Size = new Size(933, 460);
             dtgBooksLoad.StandardTab = true;
@@ -139,12 +136,29 @@
             // panel1
             // 
             panel1.BackColor = Color.Black;
+            panel1.Controls.Add(btnreloadview);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(-3, -3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1017, 69);
+            panel1.Size = new Size(1090, 69);
             panel1.TabIndex = 13;
+            // 
+            // btnreloadview
+            // 
+            btnreloadview.BackColor = Color.Black;
+            btnreloadview.Cursor = Cursors.Hand;
+            btnreloadview.FlatAppearance.BorderSize = 0;
+            btnreloadview.FlatStyle = FlatStyle.Flat;
+            btnreloadview.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnreloadview.ForeColor = Color.White;
+            btnreloadview.Location = new Point(1030, 7);
+            btnreloadview.Name = "btnreloadview";
+            btnreloadview.Size = new Size(48, 45);
+            btnreloadview.TabIndex = 2;
+            btnreloadview.Text = "⟳";
+            btnreloadview.UseVisualStyleBackColor = false;
+            btnreloadview.Click += btnreloadview_Click;
             // 
             // label2
             // 
@@ -170,44 +184,12 @@
             label1.TabIndex = 0;
             label1.Text = "In this section you can see the books exist in the system";
             // 
-            // Column1
-            // 
-            Column1.HeaderText = "ID";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
-            Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Tittle";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.ReadOnly = true;
-            Column2.Width = 300;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Autor";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            Column3.Width = 300;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "busy";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            Column4.Width = 125;
-            // 
             // Screen_Books_Load
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1011, 653);
+            ClientSize = new Size(1087, 653);
             Controls.Add(panel1);
             Controls.Add(dtgBooksLoad);
             Controls.Add(button2);
@@ -232,9 +214,6 @@
         private Panel panel1;
         private Label label1;
         private Label label2;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
+        private Button btnreloadview;
     }
 }

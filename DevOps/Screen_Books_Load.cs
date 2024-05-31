@@ -15,13 +15,17 @@ namespace DevOps
     {
 
         //Database connection
-        SqlConnection connection = new SqlConnection("server=ADMINSYSTEM; database=MYDataBase; integrated security=true");
+        SqlConnection connection = new SqlConnection("server=192.168.1.184; database=MYDataBase; integrated security=true");
 
 
         public Screen_Books_Load()
         {
             InitializeComponent();
+
         }
+
+        //References
+        Screen_Books_Register screen_books_register = new Screen_Books_Register();
 
         private void dtgBooksLoad_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -34,22 +38,61 @@ namespace DevOps
 
             try
             {
-                SqlCommand script = new SqlCommand("select ID,tittle,autor,busy from Books", connection);
+                SqlCommand script = new SqlCommand("select * from Books", connection);
                 DataTable dataTable = new DataTable();
                 SqlDataReader reader = script.ExecuteReader();
                 dataTable.Load(reader);
                 dtgBooksLoad.DataSource = dataTable;
+                foreach (DataGridViewColumn column in dtgBooksLoad.Columns)
+                {
+                    column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Has ocurred an error");
             }
 
+            connection.Close();
+
+
+
         }
 
         private void dtgdemo_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnback_Click(object sender, EventArgs e)
+        {
+            screen_books_register.Show();
+
+        }
+
+        //This Button reload DataGridView
+        private void btnreloadview_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+
+            try
+            {
+                SqlCommand script = new SqlCommand("select * from Books", connection);
+                DataTable dataTable = new DataTable();
+                SqlDataReader reader = script.ExecuteReader();
+                dataTable.Load(reader);
+                dtgBooksLoad.DataSource = dataTable;
+                foreach (DataGridViewColumn column in dtgBooksLoad.Columns)
+                {
+                    column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Has ocurred an error");
+            }
+
+            connection.Close();
         }
     }
 }

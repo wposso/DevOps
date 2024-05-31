@@ -7,7 +7,7 @@ namespace DevOps
     public partial class Screen_Login : Form
     {
         //Database connection
-        SqlConnection connection = new SqlConnection("server=ADMINSYSTEM; database=MYDataBase; integrated security=true");
+        SqlConnection connection = new SqlConnection("server=192.168.1.184; database=MYDataBase; integrated security=true");
 
         public Screen_Login()
         {

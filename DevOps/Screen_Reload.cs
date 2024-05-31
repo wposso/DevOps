@@ -14,7 +14,7 @@ namespace DevOps
     public partial class Screen_Reload : Form
     {
         //Database connection
-        SqlConnection connecion = new SqlConnection("server=ADMINSYSTEM; database=MYDataBase; integrated security=true");
+        SqlConnection connecion = new SqlConnection("server=192.168.1.184; database=MYDataBase; integrated security=true");
 
 
         public Screen_Reload()

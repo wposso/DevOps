@@ -50,5 +50,15 @@ namespace DevOps
         {
             OpenBooksLoad(new Screen_Books_Load());
         }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnminimized_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

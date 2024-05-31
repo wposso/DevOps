@@ -48,7 +48,9 @@
             label10 = new Label();
             panel1 = new Panel();
             pnlDload = new Panel();
+            panel3 = new Panel();
             pnllateral.SuspendLayout();
+            pnlDload.SuspendLayout();
             SuspendLayout();
             // 
             // pnllateral
@@ -237,6 +239,7 @@
             btnminimized.TabIndex = 17;
             btnminimized.Text = "←";
             btnminimized.UseVisualStyleBackColor = false;
+            btnminimized.Click += btnminimized_Click;
             // 
             // button3
             // 
@@ -265,6 +268,7 @@
             btnexit.TabIndex = 15;
             btnexit.Text = "X";
             btnexit.UseVisualStyleBackColor = false;
+            btnexit.Click += btnexit_Click;
             // 
             // label10
             // 
@@ -288,10 +292,18 @@
             // pnlDload
             // 
             pnlDload.BackColor = Color.White;
+            pnlDload.Controls.Add(panel3);
             pnlDload.Location = new Point(364, 107);
             pnlDload.Name = "pnlDload";
             pnlDload.Size = new Size(1090, 647);
             pnlDload.TabIndex = 19;
+            // 
+            // panel3
+            // 
+            panel3.Location = new Point(807, 103);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(522, 450);
+            panel3.TabIndex = 20;
             // 
             // Screen_Dashboard
             // 
@@ -313,6 +325,7 @@
             Load += Screen_Dashboard_Load;
             pnllateral.ResumeLayout(false);
             pnllateral.PerformLayout();
+            pnlDload.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -339,5 +352,7 @@
         private Label label12;
         private Panel panel1;
         private Panel pnlDload;
+        private Panel panel2;
+        private Panel panel3;
     }
 }
